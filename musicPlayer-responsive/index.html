@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+        
+
+        <div class="top-icons">
+            <i class="fas fa-volume-down"></i>
+            <i class="fas fa-bars"></i>
+        </div>
+    
+            <input type="range" min="0" max="1" step="0.1"  class="vol">
+        
+        
+        <div class="menu ">
+            <div class="filter">
+                <span class="all">All</span>
+                <span class="favourite">My Favourite</span>
+            </div>
+          <!-- add dynamic item in JS -->
+        </div>
+        <div class="music-container paused">
+            <div class="title">
+                Safari-Serena
+            </div>
+
+            <audio class="song" src="music/Serena-Safari.mp3"></audio>
+            
+            <div class="img-container">
+                <img class="cover" src="images/Serena-Safari.jpg" alt="coverSong">
+            </div>
+         
+            <div class="timer-container">
+                <div class="timer">00:00 / 00:00</div>
+            </div>
+          
+            <div class="progress-container">
+                <div class="progress">
+
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <button class="btn" id="like">
+                    <i class="fas fa-heart"></i>
+                </button>
+                <button id="prev" class="btn">
+                    <i class="fas fa-backward"></i>
+                  </button>
+                  <button id="play" class="btn btn-big">
+                    <i class="fas fa-play"></i>
+                  </button>
+                  <button id="next" class="btn">
+                    <i class="fas fa-forward"></i>
+                  </button>
+                  <button class="btn" id="random">
+                    <i class="fas fa-random"></i>
+                </button>
+            </div>
+
+            <div class="lump-right">
+                <div class="cir"></div>
+                <div class="cir"></div>
+                <div class="cir"></div>
+            </div>
+            <div class="lump-left">
+                <div class="cir"></div>
+                <div class="cir"></div>
+                <div class="cir"></div>
+            </div>
+
+        </div>
+       
+     
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
