@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Harmattan:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="menu"><i class="fas fa-bars"></i></div>
+        <a href="#" class="logo">ایران تور</a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">خانه</a></li>
+                <li><a href="#book">رزرو</a></li>
+                <li><a href="#packages">ویژه</a></li>
+                <li><a href="#services">خدمات</a></li>
+                <li><a href="#gallery">گالری</a></li>
+                <li><a href="#contact">تماس با ما</a></li>
+
+            </ul>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="searchBtn"></i>
+            <i class="fas fa-user" id="formBtn"></i>
+        </div>
+        <div class="search-container">
+            <form action="">
+                <input type="search" id="search-bar" placeholder="جستجو...">
+                <label for="#search-bar" class="fas fa-search"></label>
+            </form>
+
+        </div>
+    </header>
+
+    <div class="login-container">
+        <i class="fas fa-times" id="close-form"></i>
+        <form >
+            <input type="text" placeholder="ایمیل خود را وارد کنید">
+            <input type="text" placeholder="رمز عبور خود را وارد کنید">
+            <input type="button" value="ورود به حساب">
+            <a> رمز عبور خود را فراموش کرده ام</a>
+            <a>ساخت حساب کاربری</a>
+            
+        </form>
+    </div>
+
+    <section id="home">
+        <div class="content">
+            <p>سفری رویایی و ماندگار با</p>
+            <h1>ایران تور</h1>
+        </div>
+        <div class="vid-container">
+            <video src="imagesIran/video3.mkv" loop autoplay id="video-slider"></video>
+        </div>
+    </section>
+    <section id="book">
+        <h1>ثبت بلیط</h1>
+        <div class="row">
+            <div class="form-container">
+
+                <form action="">
+
+                    <div>
+                        <p>مقصد</p>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <p>تعداد</p>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <p>تاریخ حرکت</p>
+                        <input type="date">
+                    </div>
+                   
+                    <div>
+                        <p>تاریخ برگشت</p>
+                        <input type="date">
+                    </div>
+
+                    <button type="button">ثبت </button>
+                   
+
+                </form>
+            </div>
+            <div class="image">
+                <img src="imagesIran/book-img.svg" alt="">
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="packages">
+        <h3>تورهای ویژه</h3>
+        <div class="row package-container">
+            <div class="package " data-aos="flip-left">
+                <img src="imagesIran/kish.jpg" alt="">
+                <div class="location">                    
+                    <i class=" fas fa-map-marker-alt"></i>
+                    جزیره کیش
+                </div>
+                <p>تور هفت روزه جزیره کیش . اقامت در هتل پنج ستاره 
+                    
+                </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> 1,900,000 <span>2,900,000</span> </div>
+                <a href="#"><button>خرید بلیط</button></a>
+
+            </div>
+
+            <div class="package" data-aos="flip-left">
+                <img src="imagesIran/kavir.png" alt="">
+                <div class="location">
+                    <i class=" fas fa-map-marker-alt"></i>
+                          دشت کویر
+                </div>
+                <p>تور سه روزه  دشت کویر  با سه وعده عذایی  </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> 1,200,000 <span>1,900,000</span> </div>
+                <a href="#"><button>خرید بلیط</button></a>
+
+            </div>
+
+            <div class="package" data-aos="flip-left">
+                <img src="imagesIran/gisoom.jpg"  alt="">
+                <div class="location">
+                    <i class=" fas fa-map-marker-alt"></i>
+                    ساحل گیسوم
+                </div>
+                <p>تور 2 روزه ساحل گیسوم با امکانات ویژه تفریحی    </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <div class="price"> 900,000 <span>1,300,000</span> </div>
+                <a href="#"><button>خرید بلیط</button></a>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section id="services">
+        <h3>خدمات</h3>
+        <div class="box-container">
+            <div class="box" data-aos="flip-up">
+                <i class="fas fa-hotel" ></i>
+                <h4>اقامت در هتل</h4>
+                <p>اقامت در هتل های پنج ستاره بصورت رایگان و بدون هزینه اضافی</p>
+            </div>
+            <div class="box" data-aos="flip-up">
+                <i class="fas fa-plane" ></i>
+                <h4>مسافرت سریع</h4>
+                <p>مسافرت سریع با هواپیما و یا قطار بصورت رایگان و بدون هزینه اضافی</p>
+            </div>
+            <div class="box" data-aos="flip-up">
+                <i class="fas fa-utensils"></i>
+                <h4>غذا و نوشیدنی</h4>
+                <p>سه وعده غذایی به همراه نوشیدنی بصورت رایگان و بدون هزینه اضافی</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h3>گالری</h3>
+        <div class="box-container">
+            <div class="box" data-aos="flip-left">
+                <img src="imagesIran/bakheram4.jpg" alt="">
+                <div class="content">
+                    <h5 class="city">باغ ارم - شیراز</h5>
+                    <button>تصاویر بیشتر</button>
+                </div>
+            </div>
+            <div class="box" data-aos="flip-left">
+                <img src="imagesIran/busher.jpg" alt="">
+                <div class="content">
+                    <h5 class="city">بوشهر</h5>
+                    <button>تصاویر بیشتر</button>
+                </div>
+            </div>
+            <div class="box" data-aos="flip-left">
+                <img src="imagesIran/gilan.png" alt="">
+                <div class="content">
+                    <h5 class="city">گیلان</h5>
+                    <button>تصاویر بیشتر</button>
+                </div>
+            </div>
+            <div class="box" data-aos="flip-left">
+                <img src="imagesIran/gisoom.jpg" alt="">
+                <div class="content">
+                    <h5 class="city">گیسوم - گیلان</h5>
+                    <button>تصاویر بیشتر</button>
+                </div>
+            </div>
+            <div class="box" data-aos="flip-left">
+                <img src="imagesIran/Isfahan.jpg" alt="">
+                <div class="content">
+                    <h5 class="city">نقش جهان-اصفهان</h5>
+                    <button>تصاویر بیشتر</button>
+                </div>
+            </div>
+            <div class="box" data-aos="flip-left">
+                <img src="imagesIran/kavir.png" alt="">
+                <div class="content">
+                    <h5 class="city">دشت کویر </h5>
+                    <button>تصاویر بیشتر</button>
+                </div>
+            </div>
+            <div class="box" data-aos="flip-left">
+                <img src="imagesIran/kish.jpg" alt="">
+                <div class="content">
+                    <h5 class="city">جزیره کیش</h5>
+                    <button>تصاویر بیشتر</button>
+                </div>
+            </div>
+            <div class="box" data-aos="flip-left">
+                <img src="imagesIran/masole.png" alt="">
+                <div class="content">
+                    <h5 class="city">ماسوله - گیلان</h5>
+                    <button>تصاویر بیشتر</button>
+                </div>
+            </div>
+            <div class="box" data-aos="flip-left">
+                <img src="imagesIran/takhtjamshid.png" alt="">
+                <div class="content">
+                    <h5 class="city">تخت جمشید - مرودشت</h5>
+                    <button>تصاویر بیشتر</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h3>تماس با ما</h3>
+        <div class="row">
+            
+             <form action="">
+                    <div>
+                        <input type="text" placeholder="نام">
+                        <input type="email" placeholder="ایمیل">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="نام خانوادگی">
+                         <input type="text" placeholder="شماره همراه">
+                    </div>
+                    <textarea placeholder="متن پیام ..."  name="" id="" cols="80" rows="10"></textarea>
+                    <button>ارسال</button>
+    
+            </form>
+            
+            
+            <div class="image">
+                <img src="imagesIran/contact-img.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="box ">
+                <h3>درباره ما</h3>
+                <p> شرکت ایران تور در سال 1390 تاسیس شد و در زمینه گردشگری مشغول به کار است </p>
+                <p> شرکت ایران تور در سال 1390 تاسیس شد و در زمینه گردشگری مشغول به کار است </p>
+            </div>
+
+            <div class="box">
+                <h3>لینک سریع</h3>
+                <a href="#home">خانه</a>
+                <a href="#book">بلیط</a>
+                <a href="#packages">تور ویژه</a>
+                <a href="#services">خدمات</a>
+                <a href="#gallery">گالری</a>
+                <a href="#contact">تماس</a>
+            </div>
+            
+            <div class="box">
+                <h3>ما را دنبال کنید</h3>
+                <a href="">اینستاگرام</a>
+                <a href="">فیسبوک</a>
+                <a href="">تویتر</a>
+                
+            </div>
+
+            
+        </div>
+
+    </footer>
+
+
+    
+
+
+
+    <script src="main.js"></script>
+    
+    
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+      delay:500,
+      duration:1000
+      
+  });
+</script>
+    
+</html>
